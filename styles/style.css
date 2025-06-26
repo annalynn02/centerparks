@@ -5,18 +5,22 @@
   box-sizing:border-box;  
 }
 
-
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	/* Light mode */
+	--color-text:#3e4347;
+	--color-background:#fff;
+	--primary-color: #055e51;
+	--primary-color-2:#d7ffd0;
+	--primary-color-action:#ff427f;
+
+	/* Dark mode */
+	--color-background-dark:#1a1d1a;
+	--color-text-dark:#E0E5E8;
+	--primary-color-2-dark: #6EAF91;
+	--primary-color-action-dark:#FF8AAD;
 }
 
 
