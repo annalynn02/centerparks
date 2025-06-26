@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   De home pagina
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="Dit is de home pagina van Center Parcs">
+  <img src="readme-images/home.png" width="375px" alt="Dit is de home pagina van Center Parcs">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Accomodatie pagina - Huttenheugte
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="Dit is de accomodatie pagina van vakantie park Huttenheugte in Drenthe">
+  <img src="readme-images/accomodatie.png" width="375px" alt="Dit is de accomodatie pagina van vakantie park Huttenheugte in Drenthe">
  
 </details>
 
