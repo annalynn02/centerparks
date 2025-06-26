@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Anna Tolhuis
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Rood ik heb project Tech gevolgd maar ben niet heel confedent in mijn code
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  responsive, maar ik wil ook graag een dark mode toevoegen aan mijn website.
  
 </details>
 
@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  [link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp](https://www.centerparcs.nl)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  De home pagina
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="Dit is de home pagina van Center Parcs">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Accomodatie pagina - Huttenheugte
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="Dit is de accomodatie pagina van vakantie park Huttenheugte in Drenthe">
  
 </details>
 
