@@ -87,40 +87,45 @@
 	  </header>
 	<main>
 		<section class="hero">
-			<div class="hero-content">
-			  <h1>Centerparcs</h1>
-			  <p>Volg je natuur, wees jezelf bij Center Parcs.</p>
+			<div class="form-container">
 			  <form class="booking-form">
-				<h2>Kies park</h2>
-				<select class="park">
-				  <option>Kies park</option>
-				  <option>Nederland</option>
-				  <option>België</option>
-				  <option>Duitsland</option>
-				  <option>Frankrijk</option>
-				  <option>Denemarken</option>
-				</select>
-			
-				<div class="form-grid">
-				  <div class="info-box" onclick="verhoogAantal('accommodaties')">
-					<i class="fas fa-house"></i>
-					<span id="aantal-accommodaties">1</span>
+				
+				<!-- Row 1 -->
+				<div class="form-row">
+				  <label for="park">Kies park</label>
+				  <select id="park">
+					<option>Kies park</option>
+					<option>Nederland</option>
+					<option>België</option>
+					<option>Duitsland</option>
+					<option>Frankrijk</option>
+				  </select>
+				</div>
+		  
+				<!-- Row 2 -->
+				<div class="form-row two-cols">
+				  <div class="info-boxes">
+					<div class="info-box">
+					  <i class="fas fa-house"></i>
+					  <span>1</span>
+					</div>
+					<div class="info-box">
+					  <i class="fas fa-user-group"></i>
+					  <span>2</span>
+					</div>
 				  </div>
-				  <div class="info-box" onclick="verhoogAantal('gasten')">
-					<i class="fas fa-user-group"></i>
-					<span id="aantal-gasten">2</span>
-				  </div>
-				  <div>
-					<input type="date" placeholder="Aankomstdatum">
-				  </div>
-				  <div>
-					<input type="date" placeholder="Vertrekdatum">
+				  <div class="date-box">
+					<label for="aankomst">Aankomstdatum</label>
+					<input type="date" id="aankomst">
 				  </div>
 				</div>
-			
-				<button type="submit" class="search-btn">Zoeken</button>
+		  
+				<!-- Row 3 -->
+				<div class="form-row">
+				  <button type="submit" class="search-btn">Zoek je verblijf</button>
+				</div>
+		  
 			  </form>
-
 			</div>
 		</section>
 		<section>
