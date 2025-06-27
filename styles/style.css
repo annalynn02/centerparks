@@ -10,7 +10,7 @@
 /*********************/
 :root {
 	/* Light mode */
-	--color-text:#3e4347;
+	--color-text:#3d4246;
 	--color-background:#fff;
 	--primary-color: #055e51;
 	--primary-color-2:#d7ffd0;
@@ -21,6 +21,9 @@
 	--color-text-dark:#E0E5E8;
 	--primary-color-2-dark: #6EAF91;
 	--primary-color-action-dark:#FF8AAD;
+
+	/* Font */
+	--main-font: "Tahoma", Tahoma,Arial,Helvetica Neue,Helvetica,sans-serif;
 }
 
 /****************/
