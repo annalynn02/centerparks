@@ -9,6 +9,7 @@
 	<title>centerparcs</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles/home.css">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
@@ -99,22 +100,21 @@
 					<option>Denemarken</option>
 				</select>
 			
-				<div class=>
-				  <div class=accomodaties>
+				<div class="accommodaties" onclick="verhoogAantal('accommodaties')">
 					<span>🏠</span>
-					<span>1</span>
-				  </div>
-				  <div class=gasten>
-					<span>👥</span>
-					<span>2</span>
-				  </div>
-				  <div class= aankomst-datum>
-					<input type="date" placeholder="Aankomstdatum" />
-				  </div>
-				  <div class= vertrek-datum>
-					<input type="date" placeholder="vertrekdatum" />
-				  </div>
+					<span id="aantal-accommodaties">1</span>
 				</div>
+				<div class="gasten" onclick="verhoogAantal('gasten')">
+					<span>👥</span>
+					<span id="aantal-gasten">2</span>
+				</div>
+				<div class= aankomst-datum>
+					<input type="date" placeholder="Aankomstdatum" />
+				</div>
+				<div class= vertrek-datum>
+					<input type="date" placeholder="vertrekdatum" />
+				</div>
+				
 			
 				<button type="submit">
 				  Zoeken
