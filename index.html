@@ -87,45 +87,44 @@
 	  </header>
 	<main>
 		<section class="hero">
-			<div class="form-container">
-			  <form class="booking-form">
-				
-				<!-- Row 1 -->
-				<div class="form-row">
-				  <label for="park">Kies park</label>
-				  <select id="park">
-					<option>Kies park</option>
-					<option>Nederland</option>
-					<option>België</option>
-					<option>Duitsland</option>
-					<option>Frankrijk</option>
-				  </select>
-				</div>
+			<div class="form-card">
+			  
+			  <!-- Rij 1 -->
+			  <div class="form-row">
+				<h2>Kies park</h2>
+				<select>
+				  <option>Kies park</option>
+				  <option>Nederland</option>
+				  <option>België</option>
+				  <option>Duitsland</option>
+				  <option>Frankrijk</option>
+				</select>
+			  </div>
 		  
-				<!-- Row 2 -->
-				<div class="form-row two-cols">
-				  <div class="info-boxes">
-					<div class="info-box">
-					  <i class="fas fa-house"></i>
-					  <span>1</span>
-					</div>
-					<div class="info-box">
-					  <i class="fas fa-user-group"></i>
-					  <span>2</span>
-					</div>
+			  <!-- Rij 2 (30/70 horizontale verdeling) -->
+			  <div class="form-row horizontal-row">
+				<!-- Linkerkolom: 2 icon-boxen naast elkaar -->
+				<div class="icon-column">
+				  <div class="mini-box">
+					<i class="fas fa-house"></i>
+					<span>1</span>
 				  </div>
-				  <div class="date-box">
-					<label for="aankomst">Aankomstdatum</label>
-					<input type="date" id="aankomst">
+				  <div class="mini-box">
+					<i class="fas fa-user-group"></i>
+					<span>2</span>
 				  </div>
 				</div>
 		  
-				<!-- Row 3 -->
-				<div class="form-row">
-				  <button type="submit" class="search-btn">Zoek je verblijf</button>
+				<!-- Rechterkolom: Aankomstdatum -->
+				<div class="date-column">
+				  <p class="label-text">Aankomstdatum</p>
+				  <input type="date" class="hidden-date">
 				</div>
+			  </div>
 		  
-			  </form>
+			  <!-- Rij 3 -->
+			  <button class="search-btn">Zoek je verblijf</button>
+		  
 			</div>
 		</section>
 		<section>
