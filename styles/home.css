@@ -9,8 +9,10 @@ body {
 
 .hero {
     position: relative;
-    background-image: url('images/homemobile.jpg');
+    background-image: url('../images/homemobile.jpg');
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     padding: 8rem 2rem 12rem;
     color: white;
     text-align: center;
