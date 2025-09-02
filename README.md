@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Anna Tolhuis
 
   #### Je startniveau:
-  Rood ik heb project Tech gevolgd maar ben niet heel confedent in mijn code
+  Blauw het kan altijd omhoog
 
   #### Je focus:
   responsive, maar ik wil ook graag een dark mode toevoegen aan mijn website.
