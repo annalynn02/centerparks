@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rood ik heb project Tech gevolgd maar ben niet heel confedent in mijn code
 
   #### Je focus:
-  responsive, maar ik wil ook graag een dark mode toevoegen aan mijn website.
+  responsive, maar ik wil ook graag een dark mode toevoegen aan mijn website en kijken of ik bepaalde stukken kan verbeteren aan de website als ik daar tijd voor heb.
  
 </details>
 
@@ -68,7 +68,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="reademe-images/home.png" width="375px" alt="breakdown van de hele home pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
