@@ -55,8 +55,73 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
+
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+
+  Bevinding afbeeldingen.
+  <img src="readme-images/animaties.png" width="375px" alt="Dit zijn de animaties deze bewegen 1x">
+  <img src="readme-images/buttons.png" width="375px" alt="De buttons">
+  <img src="readme-images/foutmeldingen.png" width="375px" alt="De hoeveelheid foutmeldingen 255">
+  <img src="readme-images/nogmeererror.png" width="375px" alt="Nog een afbeelding van de 255 foutmeldingen">
+  <img src="readme-images/gaatvanscherm.png" width="375px" alt="De horrizantal scroll op destop">
+  <img src="readme-images/geenalt.png" width="375px" alt="geen alternative tekst voor afbeeldingen en kaarten">
+  <img src="readme-images/geenlimaardiv.png" width="375px" alt="geen lsit items maar div">
+  <img src="readme-images/verborgen.png" width="375px" alt="Verborgen door JS interactie">
+
+    Test 1: Screen reader
+  - Begint met H4, loopt verder wel op volgorde van H1 naar H3 en heeft ook maar 1 H1 per pagina.
+  - Gaat niet over alle Buttons en links
+  - De meeste links zijn duidelijk aangegeven de namen van sommige links zijn wel heel erg lang.
+  - Een paar links hebben een vragtekens door dat ze alleen icons hebben en 1 link heeft alleen een /.
+  - Buttons hebben button als naam of ook weer de vraagtekens van de icons.
+  - Elementen die met JS verborgen zijn zeggen geen links of buttons te hebben.
+
+  Test 2: WCAG Check list
+  Content:
+  - Sommige links heten meer info of hebben geen naam en alleen een icon. De links met meer info wordt door de screenreader over heen gelezen.
+  - Buttons hebben veel ?.
+
+  Global code:
+  - 255 errors
+  - 15 warnings
+  - 71 info messages (Niet iets om zorgen om te maken)
+  - Heeft zelfs speciaal voor de karten een vergrootglas functie om de kaart beter te lezen.
+
+  Keyboard:
+  - Bij de screenreader gaat hij van het scherm voor knoppen en hamburger menu gaat hij doorheen maar hij opent hem niet dus je gaat er onzichtbaar door heen.
+
+  Mobile and touch:
+  - Horizontal scroling niet op telefoon, maar wel op destop.
+  - Er zit overal veel en genoeg ruimte tussen knoppen behalve bij het kies park menu dit is erg klein.
+
+  Headings:
+  - Begint met H4
+
+  Lists:
+  - Gebruiken voornamelijk div
+
+  Images:
+  - sommige afbeeldingen hebben geen alt
+  - Kaart heeft geen alt
+
+  Media:
+  Ze hebben weinig video's en audio onderdelen. Alleen de home pagina heeft boven in een video die automatisch afspeelt. Deze heeft geen geluid en kan je ook niet uitzetten.
+
+  Controls:
+  - Sommige links zijn a, sommige zijn div
+  - Sommige buttos zijn div, sommige zijn buttons.
+
+  Appearance:
+  - Geen dark mode
+
+  Animation:
+  Er is een kleine animatie die niet herhaalt en niet snel afspeeld. Deze kan je alleen niet uitzetten en ook niet voor kiezen om niet af te spelen.
+
+  Color contrast:
+  - Op AA niveau checkt alles Ja.
+  - Op sommige scoort ook de AAA niveau zelfs Ja.
+  - Ik weet niet precies wat hij bedoelt met custom selection colors.
 
 </details>
 
