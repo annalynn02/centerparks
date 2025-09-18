@@ -159,11 +159,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Jeffrey      | Sarah          | Nasima  | Anna       |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Ik denk dat ik het vooral wil hebben over mijn breakdownschets  | Ik denk dat ik ook de mijne wil checken         |    | Wat zijn op deze pagina goede onderdelen of kan ik beter een andere zoeken    |
+  |  | op welke dingen we moeten letten als t gaat om html |  | Op de home pagina heb ik dit booking stukje hoe voeg ik dit juist toe in mijn HTML? |
+  |           |               |         | ...              |
 
 
   ### Verslag van meeting
