@@ -3,145 +3,205 @@
 	
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Anna Tolhuis">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>centerparcs</title>
+	<title>Centerparcs | Home</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="styles/home.css">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/svg+xml" href="images/logo.svg">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
+<!-- Corousel beginnen met flexbox voorbeelden extra info te vinden op DLO flexbox opdracht -->
 <body>
 	<header>
-		<div class="navbar">
-		  <div class="logo">Center Parcs</div>
-		  <nav>
+		<!-- 2x een nav mag! -->
+		<button aria-label="toggle menu">
+  			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<nav>
 			<ul>
-				<li><a href="#">account</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Vakantieparken</a></li>
+				<li><a href="#">Aanbiedingen</a></li>
+				<li><a href="#">Vakantie-ideeen</a></li>
+				<li><a href="#">Ontdek</a></li>
+				<li><a href="#">Meetings & Events</a></li>
+			  	<li><a href="#">Herfstverblijf</a></li>
+				<li><a href="#">snelle beslissers dagen - herfstvakantie</a></li>
+				<li><a href="#">Jouw herfstverblijf</a></li>
+				<li><a href="#">Bel ons</a></li>
+				<li><a href="#">Veel gestelde vragen</a></li>
+				<li><a href="#">My Center Parcs</a></li>
 			</ul>
-			<ul class="nav-links">
-			  <li><a href="index.html">Home</a></li>
-			  <li class="dropdown">
-				<a href="#">Vakantieparken</a>
-				<ul class="dropdown-menu">
-				  <li><a href="#">Nederland</a></li>
-				  <li><a href="#">België</a></li>
-				  <li><a href="#">Duitsland</a></li>
-				  <li><a href="#">Frankrijk</a></li>
-				  <li><a href="#">Denemarken</a></li>
-				</ul>
-			  </li>
-			  <li class="dropdown">
-				<a href="#">Aanbiedingen</a>
-				<ul class="dropdown-menu">
-				  <li><a href="#">Zomervakantie Last Minutes</a></li>
-				  <li><a href="#">Herfstvakantie</a></li>
-				  <li><a href="#">Vroegboekvoordeel</a></li>
-				  <li><a href="#">Last Minutes</a></li>
-				  <li><a href="#">Schoolvakanties</a></li>
-				  <li><a href="#">Nieuw: Betaal later zonder kosten</a></li>
-				  <li><a href="#">Verwijs een vriend</a></li>
-				  <li><a href="#">Geef een cadeaubon</a></li>
-				</ul>
-			  </li>
-			  <li class="dropdown">
-				<a href="#">Vakantie-ideeen</a>
-				<ul class="dropdown-menu">
-				  <li><a href="#">Zomervakantie Last Minutes</a></li>
-				  <li><a href="#">Herfstvakantie</a></li>
-				  <li><a href="#">Vroegboekvoordeel</a></li>
-				  <li><a href="#">Last Minutes</a></li>
-				  <li><a href="#">Schoolvakanties</a></li>
-				  <li><a href="#">Nieuw: Betaal later zonder kosten</a></li>
-				  <li><a href="#">Verwijs een vriend</a></li>
-				  <li><a href="#">Geef een cadeaubon</a></li>
-				</ul>
-			  </li>
-			  <li class="dropdown">
-				<a href="#">Ontdek</a>
-				<ul class="dropdown-menu">
-				  <li><a href="#">Zomervakantie Last Minutes</a></li>
-				  <li><a href="#">Herfstvakantie</a></li>
-				  <li><a href="#">Vroegboekvoordeel</a></li>
-				  <li><a href="#">Last Minutes</a></li>
-				  <li><a href="#">Schoolvakanties</a></li>
-				  <li><a href="#">Nieuw: Betaal later zonder kosten</a></li>
-				  <li><a href="#">Verwijs een vriend</a></li>
-				  <li><a href="#">Geef een cadeaubon</a></li>
-				</ul>
-			  </li>
-			  <li><a href="#">Meetings & Events</a></li>
-			  <li><a href="#">Zomerverblijf</a></li>
-			  <li><a href="#">Zomervakantie Last Minutes</a></li>
-			  <li><a href="#">Herfstvakantie</a></li>
-			  <li><a href="#">Bel ons</a></li>
-			  <li><a href="#">Veel gestelde vragen</a></li>
-			  <li><a href="#">My Center Parcs</a></li>
+		</nav>
+		<nav>
+			<ul>
+				<li><a href="#">Bel ons</a></li>
+				<li><a href="#">My Center Parcs</a></li>
 			</ul>
-		  </nav>
-		</div>
+		</nav>
 	</header>
 	<main>
-		<section class="home-forum">
-			<div class="form-card">
-			  
-			  <div class="form-row">
-				<h2>Kies park</h2>
-				<select>
-				  <option>Kies park</option>
-				  <option>Nederland</option>
-				  <option>België</option>
-				  <option>Duitsland</option>
-				  <option>Frankrijk</option>
+		<h1>Centerparcs</h1>
+		<section>
+			<!-- hoeft niet moeilijk met JS zou een andere kiezen!
+
+			Section -> Forum -> Select -> option hoort een label voor de eerste optie
+			label las van selectie
+			select id en label for
+			label hoef je niet te zien a11i visually hidden voor verstoppen
+			elk onderdeel heeft een label nodig mag niet zomaar een li gebruiken maar hier heb je hem nodig om ze te koppelen!
+
+			voor calender input type "date" zelf opzoeken welke
+
+			select gebruiken voor simpele drop dropdown voor styling mag je imput type text gebruiken
+
+			CSS -> vragen als ik er aan toe ben  -->
+			<h2>Het kleurrijke seizoen om te ontdekken</h2>
+			<form> <!-- Ik weet dat het een forum moet zijn maar kan ik niet beter een gecompliseerde li maken en dat met JS en CSS aanspreken? -->
+				<!-- https://www.youtube.com/watch?v=2O8pkybH6po Extra hulp voor forum types -->
+				<label for="park"> - Kies Park - </label>
+				<select id="park" required> 
+					<option value="Nederland">Nederland</option> <!-- Op de website hebben ze het per land verborgen hoe regel ik dat? -->
+					<option value="">Het Heijderbos</option>
+					<option value="">De Eemhof</option>
+					<option value="">Port Zélande</option>
+					<option value="">Park Zandvoort</option>
+					<option value="">De Huttenheugte</option>
+					<option value="">De Kempervennen</option>
+					<option value="">Limburgse Peel</option>
+					<option value="">Parc Sandur</option>
+					<option value="Belgie">Belgie</option>
+					<option value="">Terhills Resort</option>
+					<option value="">Les Ardennes</option>
+					<option value="">De vossemeren</option>
+					<option value="">Erperheiden</option>
+					<option value="">Park De Haan</option>
+					<option value="Duitsland">Duitsland</option>
+					<option value="">Bispinger Heide</option>
+					<option value="">Park Bostalsee</option>
+					<option value="">Park Hochsauerland</option>
+					<option value="">Park Eifel</option>
+					<option value="">Park Nordseeküste</option>
+					<option value="">Park Allgäu</option>
+					<option value="Frankrijk">Frankrijk</option>
+					<option value="">Les Landes de Gascogne</option>
+					<option value="">Le Lac d'Ailette</option>
+					<option value="">Les Trois Forêts</option>
+					<option value="">Villages Nature Paris</option>
+					<option value="">Les Bois-Francs</option>
+					<option value="">Les Hauts de Bruyères</option>
+					<option value="">Le Bois aux Daims</option>
+					<option value="Denemarken">Denemarken</option>
+					<option value="">Nordborg Resort</option>
 				</select>
-			  </div>
-		  
-			  <div class="form-row horizontal-row">
-				<div class="icon-column">
-				  <div class="mini-box">
-					<i class="fas fa-house"></i>
-					<span>1</span>
-				  </div>
-				  <div class="mini-box">
-					<i class="fas fa-user-group"></i>
-					<span>2</span>
-				  </div>
-				</div>
-		  
-				<div class="date-column">
-				  <p class="label-text">Aankomstdatum</p>
-				  <input type="date">
-				</div>
-			  </div>
-		  
-			  <button class="search-btn">Zoek je verblijf</button>
-		  
-			</div>
+				<label for="accommodaties"> - Kies aantal accommodaties - </label>
+				<select id="accommodaties">
+					<option value="">1 accommodatie</option>
+					<option value="">2 accommodaties</option>
+					<option value="">3 accommodaties</option>
+					<option value="">4 accommodaties</option>
+				</select>
+				<label for="personen"> - Kies aantal personen -</label>
+				<select id="personen"> <!-- Op de website hebben ze dat je per personen typen een aantal kan kiezen hoe regel ik dat? -->
+					<option value="">Volwassenen</option>
+					<option value="">Kinderen</option>
+					<option value="">Huisdieren</option>
+				</select>
+				<label for="aankomst"> - Kies een aankomst datum - </label>
+				<input id="aankost" type="date">
+
+				<label for="vertrek"> - Kies een vertrek datum - </label>
+				<input id="vertrek" type="date">
+			</form>
 		</section>
 		<section>
-			<p><em>Ontdek jouw Center Parcs verblijf</em>  in één van onze 28 parken in Nederland, België, Duitsland, Frankrijk en Denemarken.</p>
+			<h2>Onze bestemmingen</h2>
+			<h3><a href="#" class="active">Jouw laatst bekeken parken</a></h3> <!--Is het oke dat ik hier een class gebruik kan ik dit anders aanpakken? Het is voor de JS -->
 			<article>
-				<i></i>
-				<p>Betaal later of in 3 termijnen zonder kosten met Klarna</p>
+				<h3>De Kempervennen</h3> <!-- Moet dit een H2 zijn? -->
+				<h4>Nederland, Noord-Brabant</h4> <!-- en dit een H3? -->
+				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+				<img src="" alt="Vakantie park De Kempervennen">
+			</article>
+			<h3><a href="#">Onze favoriete bestemmingen</a></h3>
+			<article>
+				<h3>De Kempervennen</h3>
+				<h4>Nederland, Noord-Brabant</h4>
+				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+				<img src="" alt="Vakantie park De Kempervennen">
 			</article>
 			<article>
-				<i></i>
-				<p>Alleen bij Center Parcs is dit allemaal inbegrepen</p>
+				<h3>De Eemhof</h3>
+				<h4>Nederland, Flevoland</h4>
+				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+				<img src="" alt="Vakantie park De Eemhof">
 			</article>
 			<article>
-				<i></i>
-				<p>Graatis omboeken tot 21 dagen voor aankomst</p>
+				<h3>De Huttenheugte</h3>
+				<h4>Nederland, Drenthe</h4>
+				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+				<img src="" alt="Vakantie park De Huttenheugte">
 			</article>
-		</section>
-		<section class="bestemmingen">
-			<h2 class="active">Onze bestemmingen</h2>
-			<h3>Jouw laatst bekeken parken</h3>
-			<h3>Onze favoriete betemmingen</h3>
-			<h3>Vlakbij huidige locatie</h3>
+			<article>
+				<h3>Het Heijderbos</h3>
+				<h4>Nederland, Limburg Nederland</h4>
+				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+				<img src="" alt="Vakantie park Het Heijderbos">
+			</article>
+			<article>
+				<h3>Port Zélande</h3>
+				<h4>Nederland, Zuid-Holland</h4>
+				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+				<img src="" alt="Vakantie park Port Zélande">
+			</article>
+			<article>
+				<h3 lang="en">Villages Nature Paris</h3>
+				<h4>Frankrijk, Parijs <span lang="fr">île De France</span></h4>
+				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+				<img src="" alt="Vakantie park Villages Nature Paris">
+			</article>
+			<h3><a href="#">Vlakbij huidige locatie</a></h3>
+			<article>
+				<h3>De Eemhof</h3>
+				<h4>Nederland, Flevoland</h4>
+				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+				<img src="" alt="Vakantie park De Eemhof">
+			</article>
+			<article>
+				<h3>Port Zélande</h3>
+				<h4>Nederland, Zuid-Holland</h4>
+				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+				<img src="" alt="Vakantie park Port Zélande">
+			</article>
+			<article>
+				<h3>Park Zandvoort</h3>
+				<h4>Nederland, Noord-Holland</h4>
+				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+				<img src="" alt="Vakantie park Park Zandvoort">
+			</article>
+			<article>
+				<h3>De Huttenheugte</h3>
+				<h4>Nederland, Drenthe</h4>
+				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+				<img src="" alt="Vakantie park De Huttenheugte">
+			</article>
+			<a href="#">Bekijk onze 28 parken</a>
 		</section>
 		<section>
 			<h2>Aanbiedingen</h2>

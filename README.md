@@ -159,20 +159,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Jeffrey      | Sarah          | Nasima  | Anna       |
+  | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | Ik denk dat ik het vooral wil hebben over mijn breakdownschets  | Ik denk dat ik ook de mijne wil checken         |    | Wat zijn op deze pagina goede onderdelen of kan ik beter een andere zoeken    |
-  |  | op welke dingen we moeten letten als t gaat om html |  | Op de home pagina heb ik dit booking stukje hoe voeg ik dit juist toe in mijn HTML? |
-  |           |               |         | ...              |
+  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - Nav hoeft niet zo groot mag gewoon het eerste wat je ziet en niet de onderliggende tabs
-  - <!--Zie aantekeningen in index bestand voor verder aanvullen over forum vraag-->
-  - Op DLO staan goede voorbeelden voor carousels.
-  - 
+  - punt 1
+  - punt 2
+  - nog een punt
+  - ...
 
 </details>
 
@@ -192,10 +192,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | Anna      |
-  | ---            | ---                | ---          | ---           |
-  | dit bespreken  | en dit             | en ik dit    | Kan ik hier ook gewoon een H2 gebruiken en een H3 inplaats van H3 en H4?  |
-  | en dat ook nog | dit als er tijd is | nog een punt | Mag ik hier voor mijn JS wel een class gebruiken? |
+  | student 1      | student 2          | student 3    | student 4        |
+  | ---            | ---                | ---          | ---              |
+  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
