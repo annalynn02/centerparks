@@ -1,13 +1,29 @@
-/**************/
-/* CSS REMEDY */
-/**************/
+@font-face{
+	font-family: 'bagoss';
+	src: url(../fonts/Bagoss-Regular.woff2) format("woff2");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'bagoss';
+	src: url(../fonts/Bagoss-Medium.woff2) format("woff2");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'bagoss';
+	src: url(../fonts/Bagoss-Bold.woff2) format("woff2");
+	font-weight: 700;
+	font-style: normal;
+}
+
 *, *::after, *::before {
   box-sizing:border-box;  
 }
 
-/*********************/
 /* CUSTOM PROPERTIES */
-/*********************/
 :root {
 	/* Light mode */
 	--color-text:#3d4246;
@@ -15,6 +31,7 @@
 	--primary-color: #055e51;
 	--primary-color-2:#d7ffd0;
 	--primary-color-action:#ff427f;
+	--seizoen-color:#ffe2a1;
 
 	/* Dark mode */
 	--color-background-dark:#1a1d1a;
@@ -23,7 +40,7 @@
 	--primary-color-action-dark:#FF8AAD;
 
 	/* Font */
-	--main-font: "Tahoma", Tahoma,Arial,Helvetica Neue,Helvetica,sans-serif;
+	--main-font: 'bagoss', sans-serif;
 }
 
 /* Algemeen */
@@ -47,6 +64,7 @@ header{
 header a{
 	color: var(--primary-color-2);
 	transition: .5s;
+	font-weight: 500;
 }
 
 a{
@@ -74,17 +92,28 @@ nav:nth-of-type(1) ul{
 	right: 0;
 	translate: -100%;
 	transition: 1s;
+	background-color: var(--primary-color);
+	padding: 2em;
 }	
 
-nav:nth-of-type(1).is-open ul{
-	translate: 0;
+nav:nth-of-type(1) ul li{
+	font-size: 1.375rem;
+	padding: .9375em;
+}
+
+nav:nth-of-type(1) ul li:nth-of-type(7){
+	color: var(--seizoen-color);
+}
+
+nav:nth-of-type(1) ul.is-open {
+  translate: 0;
 }
 
 /* Hamburger menu button */
 button {
   appearance: none;
 
-  width: 3em;
+  width: 5rem;           
   aspect-ratio: 1;
 
   border: none;
@@ -93,13 +122,33 @@ button {
   display: grid;
   justify-content: center;
   align-content: center;
+
+  z-index: 2;
+}
+
+button.open-menu {
+  appearance: none;
+
+  width: .8em;           
+  aspect-ratio: 1;
+
+  margin: 1em;
+
+  border: none;
+  background-color: var(--primary-color);
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  z-index: 2;
 }
 
 button span {
   display: block;
 
-  width: 1.5em;
-  height: 0.2em;
+  width: 3rem;  
+  height: 0.4rem;  
 
   background-color: var(--primary-color-2);
   border-radius: 0.1em;
@@ -111,11 +160,11 @@ button span {
 }
 
 button span:nth-of-type(1) {
-  translate: 0 -0.5em;
+  translate: 0 -0.8rem; 
 }
 
 button span:nth-of-type(3) {
-  translate: 0 0.5em;
+  translate: 0 0.8rem;
 }
 
 button.open-menu span:nth-of-type(1) {
@@ -144,4 +193,49 @@ nav:nth-of-type(2) ul{
 
 nav:nth-of-type(2) ul li{
 	flex-direction: column;
+}
+
+@media screen {
+	@media (min-width: 600px) {
+		/* Styles */
+		nav:nth-of-type(1) ul li{
+			font-size: 1.375rem;
+		}
+	}
+
+	/* Vanaf 1000px */
+	@media (min-width: 1000px) {
+		/* Styles */
+		nav:nth-of-type(1) ul {
+			position: static;
+			translate: 0;
+			padding: 0;
+			background-color: transparent;
+			display: flex;
+			gap: 1em;
+		}
+
+		nav:nth-of-type(1) ul li{
+			font-size: .75rem;
+		}
+
+		nav:nth-of-type(1) ul li:nth-of-type(1){ 
+			font-size: 1.5rem;
+		}
+
+		nav:nth-of-type(1) ul li:nth-of-type(10){ 
+			display: none;
+		}
+
+		nav:nth-of-type(1) ul li:nth-of-type(11){ 
+			display: none;
+		}
+
+		nav:nth-of-type(1) ul li:nth-of-type(12){ 
+			display: none;
+		}
+		button {
+			display: none;
+		}
+	}
 }

@@ -1,18 +1,8 @@
 // JavaScript Document
-console.log("hi");
+const menuButton = document.querySelector("header button"); 
+const hetMenu = document.querySelector("header nav:nth-of-type(1) ul");
 
-let menuButton = document.querySelector("header nav button");
-let hetMenu = document.querySelector("header nav");
-let deButton = document.querySelector("button");
-
-menuButton .addEventListener("click", toggleMenu);
-
-function toggleMenu() {
+menuButton.addEventListener("click", () => { //Verkorte manier van een function schrijven
   hetMenu.classList.toggle("is-open");
-}
-
-deButton.addEventListener("click", toggleButton);
-
-function toggleButton() {
-  deButton.classList.toggle("open-menu");
-}
+  menuButton.classList.toggle("open-menu"); 
+});
