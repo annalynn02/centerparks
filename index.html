@@ -17,7 +17,7 @@
 <body>
 	<header>
 		<!-- 2x een nav mag! -->
-		<button aria-label="toggle menu">
+		<button aria-label="toggle menu"> <!-- Of moet het hamburgermenu echt in de nav? -->
   			<span></span>
 			<span></span>
 			<span></span>
@@ -119,99 +119,170 @@
 				<input id="vertrek" type="date">
 			</form>
 		</section>
-		<section>
-			<h2>Onze bestemmingen</h2>
-			<h3><a href="#" class="active">Jouw laatst bekeken parken</a></h3> <!--Is het oke dat ik hier een class gebruik kan ik dit anders aanpakken? Het is voor de JS -->
-			<article>
-				<h3>De Kempervennen</h3> <!-- Moet dit een H2 zijn? -->
-				<h4>Nederland, Noord-Brabant</h4> <!-- en dit een H3? -->
-				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-				<img src="" alt="Vakantie park De Kempervennen">
-			</article>
-			<h3><a href="#">Onze favoriete bestemmingen</a></h3>
-			<article>
-				<h3>De Kempervennen</h3>
-				<h4>Nederland, Noord-Brabant</h4>
-				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-				<img src="" alt="Vakantie park De Kempervennen">
-			</article>
-			<article>
-				<h3>De Eemhof</h3>
-				<h4>Nederland, Flevoland</h4>
-				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-				<img src="" alt="Vakantie park De Eemhof">
-			</article>
-			<article>
-				<h3>De Huttenheugte</h3>
-				<h4>Nederland, Drenthe</h4>
-				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-				<img src="" alt="Vakantie park De Huttenheugte">
-			</article>
-			<article>
-				<h3>Het Heijderbos</h3>
-				<h4>Nederland, Limburg Nederland</h4>
-				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-				<img src="" alt="Vakantie park Het Heijderbos">
-			</article>
-			<article>
-				<h3>Port Zélande</h3>
-				<h4>Nederland, Zuid-Holland</h4>
-				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-				<img src="" alt="Vakantie park Port Zélande">
-			</article>
-			<article>
-				<h3 lang="en">Villages Nature Paris</h3>
-				<h4>Frankrijk, Parijs <span lang="fr">île De France</span></h4>
-				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-				<img src="" alt="Vakantie park Villages Nature Paris">
-			</article>
-			<h3><a href="#">Vlakbij huidige locatie</a></h3>
-			<article>
-				<h3>De Eemhof</h3>
-				<h4>Nederland, Flevoland</h4>
-				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-				<img src="" alt="Vakantie park De Eemhof">
-			</article>
-			<article>
-				<h3>Port Zélande</h3>
-				<h4>Nederland, Zuid-Holland</h4>
-				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-				<img src="" alt="Vakantie park Port Zélande">
-			</article>
-			<article>
-				<h3>Park Zandvoort</h3>
-				<h4>Nederland, Noord-Holland</h4>
-				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-				<img src="" alt="Vakantie park Park Zandvoort">
-			</article>
-			<article>
-				<h3>De Huttenheugte</h3>
-				<h4>Nederland, Drenthe</h4>
-				<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-				<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-				<img src="" alt="Vakantie park De Huttenheugte">
-			</article>
-			<a href="#">Bekijk onze 28 parken</a>
+
+		<!-- Hoe kan ik dit stuk beter schrijven dat ik niet zoveel class en div heb? Ik heb nu dit stuk nammelijk aangepast met behulp van ChatGPT, maar hij werkt en niet zoals ik wil en maakt nu heel veel gebruik van class en div. -->
+		<section class="bestemmingen">
+			<h2>Onze bestemmingen</h2> 
+
+			<nav class="tabs"> <!-- Mag dit in een nav? -->
+				<a class="tab active" data-target="recent">Jouw laatst bekeken parken</a>
+				<a class="tab" data-target="favoriet">Onze favoriete bestemmingen</a>
+				<a class="tab" data-target="dichtbij">Vlakbij huidige locatie</a>
+			</nav>
+
+			<!-- Categorie 1 -->
+			<div class="carousel active" id="recent"> <!-- Mag dit in verband met de JS? -->
+				<article class="card">
+				<a href="#">
+					<img src="images/park1.jpg" alt="Vakantie park De Kempervennen">
+				</a>
+				<div class="info">
+					<h3>De Kempervennen</h3>
+					<p>Nederland, Noord-Brabant</p>
+					<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+					<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+				</div>
+				</article>
+			</div>
+			<!-- Categorie 2 -->
+			<div class="carousel" id="favoriet">
+				<article class="card">
+					<a href="#">
+						<img src="images/park1.jpg" alt="Vakantie park De Kempervennen">
+					</a>
+					<div class="info">
+						<h3>De Kempervennen</h3>
+						<p>Nederland, Noord-Brabant</p>
+						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+					</div>
+				</article>
+
+				<article class="card">
+					<a href="#">
+						<img src="images/park2.jpg" alt="Vakantie park De Eemhof">
+					</a>
+					<h3>De Eemhof</h3>
+					<div class="info">
+						<p>Nederland, Flevoland</p>
+						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+					</div>
+				</article>
+
+				<article class="card">
+					<a href="#">
+						<img src="images/park3.jpg" alt="Vakantie park De Huttenheugte">
+					</a>
+					<h3>De Huttenheugte</h3>
+					<div class="info">
+						<p>Nederland, Drenthe</p>
+						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+					</div>
+				</article>
+
+				<article class="card">
+					<a href="#">
+						<img src="images/park4.jpg" alt="Vakantie park Het Heijderbos">
+					</a>
+					<h3>Het Heijderbos</h3>
+					<div class="info">
+						<p>Nederland, Limburg Nederland</p>
+						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+					</div>
+				</article>
+
+				<article class="card">
+					<a href="#">
+						<img src="images/park5.jpg" alt="Vakantie park Port Zélande">
+					</a>
+					<h3>Port Zélande</h3>
+					<div class="info">
+						<p>Nederland, Zuid-Holland</p>
+						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+					</div>
+				</article>
+
+				<article class="card">
+					<a href="#">
+						<img src="" alt="Vakantie park Villages Nature Paris">
+					</a>
+					<h3 lang="en">Villages Nature Paris</h3>
+					<div class="info">
+						<p>Frankrijk, Parijs <span lang="fr">île De France</span></p>
+						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+					</div>
+				</article>
+			</div>
+
+			<!-- Categorie 3 -->
+			<div class="carousel" id="dichtbij">
+				
+				<article class="card">
+				<a href="#">
+					<img src="images/park2.jpg" alt="Vakantie park De Eemhof">
+				</a>
+				<div class="info">
+					<h3>De Eemhof</h3>
+					<p>Nederland, Flevoland</p>
+					<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+					<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+				</div>
+				</article>
+
+				<article class="card">
+					<a href="#">
+						<img src="images/park5.jpg" alt="Vakantie park Port Zélande">
+					</a>
+					<h3>Port Zélande</h3>
+					<div class="info">
+						<p>Nederland, Zuid-Holland</p>
+						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+					</div>
+				</article>
+
+				<article class="card">
+					<a href="#">
+						<img src="images/park3.jpg" alt="Vakantie park De Huttenheugte">
+					</a>
+					<h3>De Huttenheugte</h3>
+					<div class="info">
+						<p>Nederland, Drenthe</p>
+						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+					</div>
+				</article>
+
+				<article class="card">
+					<a href="#">
+						<img src="" alt="Vakantie park Park Zandvoort">
+					</a>
+					<h3>Park Zandvoort</h3>
+					<div class="info">
+						<p>Nederland, Noord-Holland</p>
+						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
+						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
+					</div>
+				</article>
+			</div>
 		</section>
+
 		<section>
 			<h2>Aanbiedingen</h2>
 			<article>
 				<h3>Zomervakantie Last Minutes</h3>
 				<p>vanaf <em>€449</em> 4-pers. Comfort cottage 3 nachten/ 4 dagen</p>
+				<a href="#"><img src="" alt=""></a>
 			</article>
 			<article>
 				<h3>Onze zomertopper: De Eemhof!</h3>
 				<p>Avontuur in het bos, watersport voor iedereen en relaxen aan het Eemmeer</p>
+				<a href="#"><img src="" alt=""></a>
 			</article>
 			<article>
 				<h3>Vroegboekvoordeel</h3>
@@ -220,6 +291,7 @@
 					<li>+ tot €45 <em>Activity Credit</em></li>
 					<li>+ gratis voorkeursligging</li>
 				</ul>
+				<a href="#"><img src="" alt=""></a>
 			</article>
 			<a href="#">Bekijk alle aanbiedingen</a>
 		</section>

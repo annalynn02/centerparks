@@ -1,1 +1,159 @@
 @import url(styles/style.css);
+
+main{
+    background-color: var(--color-background);
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(16em, 1fr) );
+}
+
+h1{
+    translate: -100%;
+}
+
+main a{
+    color: var(--color-background);
+    text-decoration: none;
+    background-color: var(--primary-color);
+    border-radius: 2em;
+    padding: .5em 1em;
+}
+
+section:nth-of-type(1){
+    grid-column: 1/-1;
+}
+/* 
+section:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+}
+
+section:nth-of-type(2) a{
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+article{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1em;
+
+    margin: 1em;
+}
+
+article a{
+    position: absolute;
+
+    background-color: transparent;
+    border-radius: 0%;
+
+    grid-column: 1/3;
+    grid-row: 1/-1;
+
+    margin: 1em;
+}
+article a img{
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    transition: transform .5s;
+    border-radius: .625rem .625rem 0 0;
+}
+article h2, article h3, article p article ul, article li{
+    z-index: 2;
+}
+
+article h2{
+    font-size: 1em;
+
+    grid-row-start: 2;
+    grid-column: 1/-1;
+
+    align-self:end;
+}
+
+article h3{
+    font-size: .7em;
+
+    grid-row-start: 3;
+    grid-column-start: 1/-1;
+
+    align-self:start;
+}
+
+article p{
+    font-size: .7em;
+
+    grid-row-start: 4;
+    grid-column-start: 1/-1;
+
+    align-self:start;
+} */
+
+.bestemmingen {
+    padding: 1em;
+}
+
+.tabs {
+    display: flex;
+    gap: 1em;
+    border-bottom: 2px solid #ddd;
+    background-color: lightgrey;
+    border-radius: .6em;
+}
+
+.tab {
+    background: none;
+    border: none;
+    padding: .5em 1em;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--text-color);
+    border-radius: 0;
+}
+
+.tab.active {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.carousel {
+    display: none;
+    overflow-x: auto;
+    display: flex;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.carousel.active {
+    display: flex;
+}
+
+.card {
+    position: relative;
+    min-width: 250px;
+    height: 200px;
+    border-radius: .625rem;
+    overflow: hidden;
+    color: var(--color-text-dark);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.card .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: .5em;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent); /* Gradient for better text visibility */
+}
