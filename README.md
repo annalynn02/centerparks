@@ -159,11 +159,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | student 1      | student 2          | student 3    | Anna       |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | dit bespreken  | en dit             | en ik dit    | Im mijn carousel link ik door naar de volgende pagina per blokje. De link die is niet klikbaar, omdat alles er boven op ligt ook maak ik nu veel gebruik van div's en classes, maar hoe kan ik zorgen dat hij werkt en daar minder gebruik van maakt? Ook zit er een nav in maar mag dit wel buiten de header? |
+  | en dat ook nog | dit als er tijd is | nog een punt | Ook wordt hij aangesproken met JS, maar op het moment werkt dit niet hoe zorg ik er voor dat het wel werkt? |
+  | ...            | ...                | ...          | Mijn footer ziet er zo uit met ook uitklapbaar, mag ik dit net als de header simpeler maken of moet dit wel echt helemaal zo uit gewerkt zoals ik nu heb?         |
 
 
   ### Verslag van meeting
