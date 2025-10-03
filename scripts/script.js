@@ -20,3 +20,5 @@ tabs.forEach(tab => {
     document.getElementById(tab.dataset.target).classList.add('active');
   });
 });
+
+//if else stetment gebruiken

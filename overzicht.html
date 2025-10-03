@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="nl">
-	
 <head>
-	<meta charset="UTF-8">
-	<meta name="author" content="Anna Tolhuis">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Centerparcs | Home</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="styles/home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centerparcs | De Kempervennen</title>
+
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/overzicht.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/logo.svg">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<!-- Corousel beginnen met flexbox voorbeelden extra info te vinden op DLO flexbox opdracht -->
 <body>
-	<header>
+    <header>
 		<!-- 2x een nav mag! -->
 		<button aria-label="toggle menu"> <!-- Of moet het hamburgermenu echt in de nav? -->
   			<span></span>
@@ -45,61 +41,28 @@
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<h1>Centerparcs</h1>
+    <main>
 		<section>
-			<!-- hoeft niet moeilijk met JS zou een andere kiezen!
-
-			Section -> Forum -> Select -> option hoort een label voor de eerste optie
-			label las van selectie
-			select id en label for
-			label hoef je niet te zien a11i visually hidden voor verstoppen
-			elk onderdeel heeft een label nodig mag niet zomaar een li gebruiken maar hier heb je hem nodig om ze te koppelen!
-
-			voor calender input type "date" zelf opzoeken welke
-
-			select gebruiken voor simpele drop dropdown voor styling mag je imput type text gebruiken
-
-			CSS -> vragen als ik er aan toe ben  -->
-			<h2>Het kleurrijke seizoen om te ontdekken</h2>
-			<form> <!-- Ik weet dat het een forum moet zijn maar kan ik niet beter een gecompliseerde li maken en dat met JS en CSS aanspreken? -->
-				<!-- https://www.youtube.com/watch?v=2O8pkybH6po Extra hulp voor forum types -->
-				<label for="park"> - Kies Park - </label>
-				<select id="park" required> 
-					<option value="Nederland">Nederland</option> <!-- Op de website hebben ze het per land verborgen hoe regel ik dat? -->
-					<option value="">Het Heijderbos</option>
-					<option value="">De Eemhof</option>
-					<option value="">Port Zélande</option>
-					<option value="">Park Zandvoort</option>
-					<option value="">De Huttenheugte</option>
-					<option value="">De Kempervennen</option>
-					<option value="">Limburgse Peel</option>
-					<option value="">Parc Sandur</option>
-					<option value="Belgie">Belgie</option>
-					<option value="">Terhills Resort</option>
-					<option value="">Les Ardennes</option>
-					<option value="">De vossemeren</option>
-					<option value="">Erperheiden</option>
-					<option value="">Park De Haan</option>
-					<option value="Duitsland">Duitsland</option>
-					<option value="">Bispinger Heide</option>
-					<option value="">Park Bostalsee</option>
-					<option value="">Park Hochsauerland</option>
-					<option value="">Park Eifel</option>
-					<option value="">Park Nordseeküste</option>
-					<option value="">Park Allgäu</option>
-					<option value="Frankrijk">Frankrijk</option>
-					<option value="">Les Landes de Gascogne</option>
-					<option value="">Le Lac d'Ailette</option>
-					<option value="">Les Trois Forêts</option>
-					<option value="">Villages Nature Paris</option>
-					<option value="">Les Bois-Francs</option>
-					<option value="">Les Hauts de Bruyères</option>
-					<option value="">Le Bois aux Daims</option>
-					<option value="Denemarken">Denemarken</option>
-					<option value="">Nordborg Resort</option>
-				</select>
-				<label for="accommodaties"> - Kies aantal accommodaties - </label>
+			<h1>De kempervennen</h1>
+			<p>Nederland, Noord-Brabant, Westerhoven</p>
+		</section>
+		<section>
+			<nav>
+				<ul>
+					<li><a href="#">overzicht</a></li>
+					<li><a href="#">Accommodaties</a></li>
+					<li><a href="#">Activiteiten</a></li>
+					<li><a href="#">Restaurants & Shops</a></li>
+					<li><a href="#">Omgeving</a></li>
+					<li><a href="#">Praktische informatie</a></li>
+					<li><a href="#">Dagje uit</a></li>
+				</ul>
+			</nav>
+		</section>
+		<section>
+			<h2>Boek jou verblijf</h2>
+			<form action="">
+								<label for="accommodaties"> - Kies aantal accommodaties - </label>
 				<select id="accommodaties">
 					<option value="">1 accommodatie</option>
 					<option value="">2 accommodaties</option>
@@ -117,195 +80,160 @@
 
 				<label for="vertrek"> - Kies een vertrek datum - </label>
 				<input id="vertrek" type="date">
-				<button type="submit">Zoek</button>
-				</form>
+				<button type="submit">Zoek je verblijf</button>
+			</form>
+			<p>Spannende indooractiviteiten zoals skiën, verfrissende wateravonturen met een frisse duik in het meer en het ruige heidegebied van De Malpie om naar hartenlust te verkennen.</p>
+			<article>
+				<h3>Aqua Mundo</h3>
+				<p>Voel de kick van 4 glijbanen, waaronder de Aqua Loop, Aqua Racer en wildwaterbaan</p>
+			</article>
+			<article>
+				<h3>Accommodatietip</h3>
+				<p>Ontspan in de Wellness cottage, Avontuur cottage of Woonboot in het grootste Nederlandse park</p>
+			</article>
+			<article>
+				<h3>Omgeving</h3>
+				<p>Ontdek de 2 meren, een sereen bos en het fascinerende heidegebied De Malpie</p>
+			</article>
+			<article>
+				<h3>Belevingstip 1</h3>
+				<p>Ga het meer op voor watersporten zoals Waterskiën, Wakeboarden en duiken</p>
+			</article>
+			<article>
+				<h3>Belevingstip 2</h3>
+				<p>Roetsj van de spannende indoor skipiste met 5500 m² echte sneeuw</p>
+			</article>
+			<p>Ontbreekt er informatie? <a href="#">Ja</a> / <a href="#">Nee</a></p>
 		</section>
-
 		<section>
-			<h2>Onze bestemmingen</h2> 
+			<h2>Accommodaties</h2>
+			<p>Omring jezelf en je gezelschap in dit natuurrijke park! Kies hoeveel luxe je wilt, of ga voor een bijzondere accommodatie zoals een Woonboot of Avontuur cottage. In de Wellness cottage heb je zelfs een eigen sauna!</p>
 
 			<ul>
-				<li><a class="active" data-target="recent">Jouw laatst bekeken parken</a></li> <!-- Mag ik hier een class active bij voor de JS? -->
-				<li><a data-target="favoriet">Onze favoriete bestemmingen</a></li>
-				<li><a data-target="dichtbij">Vlakbij huidige locatie</a></li>
+				<li><a class="active" data-target="recent">Cottages</a></li> <!-- Mag ik hier een class active bij voor de JS? -->
+				<li><a data-target="favoriet">Onze Bijzondere accommodaties</a></li>
 			</ul>
-
 			<!-- Categorie 1 -->
-			<div class="carousel active" id="recent"> <!-- Mag dit in verband met de JS? -->
-				<article class="card">
-					<a href="overzicht.html">
-					<img src="images/park1.jpg" alt="Vakantie park De Kempervennen">
-					</a>
-					<div class="info">
-						<h3>De Kempervennen</h3>
-						<p>Nederland, Noord-Brabant</p>
-						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-					</div>
-				</article>
-			</div>
+			<article>
+				<h3>Premium cottage</h3>
+				<h4>2 - 10</h4>
+				<p>De bedden zijn opgemaakt bij aankost en voor wat quality time geniet je van een tweede tv in een van de slaapkamers.</p>
+				<a href="#">Bekijk de accommodaties</a>
+			</article>
+			
+			<article>
+				<h3>VIP cottage</h3>
+				<h4>2 - 6</h4>
+				<p>Even extra genieten? Dat doe je vanuit een VIP Cottage, want dan heb je extra services die op je wachten.</p>
+				<a href="#">Bekijk de accommodaties</a>
+			</article>
+
+			<article>
+				<h3>Zie ook:</h3>
+				<h4>Bijzondere accommodaties</h4>
+				<p>Trakteer jezelf op een bijzonder verblijf, of verras de kinderen met een onvergetelijk avontuur.</p>
+			</article>
 			<!-- Categorie 2 -->
-			<div class="carousel" id="favoriet">
-				<article class="card">
-					<a href="overzicht.html">
-						<img src="images/park1.jpg" alt="Vakantie park De Kempervennen">
-					</a>
-					<div class="info">
-						<h3>De Kempervennen</h3>
-						<p>Nederland, Noord-Brabant</p>
-						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-					</div>
-				</article>
-
-				<article class="card">
-					<a href="#">
-						<img src="images/park2.jpg" alt="Vakantie park De Eemhof">
-					</a>
-					<h3>De Eemhof</h3>
-					<div class="info">
-						<p>Nederland, Flevoland</p>
-						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-					</div>
-				</article>
-
-				<article class="card">
-					<a href="#">
-						<img src="images/park3.jpg" alt="Vakantie park De Huttenheugte">
-					</a>
-					<h3>De Huttenheugte</h3>
-					<div class="info">
-						<p>Nederland, Drenthe</p>
-						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-					</div>
-				</article>
-
-				<article class="card">
-					<a href="#">
-						<img src="images/park4.jpg" alt="Vakantie park Het Heijderbos">
-					</a>
-					<h3>Het Heijderbos</h3>
-					<div class="info">
-						<p>Nederland, Limburg Nederland</p>
-						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-					</div>
-				</article>
-
-				<article class="card">
-					<a href="#">
-						<img src="images/park5.jpg" alt="Vakantie park Port Zélande">
-					</a>
-					<h3>Port Zélande</h3>
-					<div class="info">
-						<p>Nederland, Zuid-Holland</p>
-						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-					</div>
-				</article>
-
-				<article class="card">
-					<a href="#">
-						<img src="" alt="Vakantie park Villages Nature Paris">
-					</a>
-					<h3 lang="en">Villages Nature Paris</h3>
-					<div class="info">
-						<p>Frankrijk, Parijs <span lang="fr">île De France</span></p>
-						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-					</div>
-				</article>
-			</div>
-
-			<!-- Categorie 3 -->
-			<div class="carousel" id="dichtbij">
-				
-				<article class="card">
-				<a href="#">
-					<img src="images/park2.jpg" alt="Vakantie park De Eemhof">
-				</a>
-				<div class="info">
-					<h3>De Eemhof</h3>
-					<p>Nederland, Flevoland</p>
-					<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-					<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-				</div>
-				</article>
-
-				<article class="card">
-					<a href="#">
-						<img src="images/park5.jpg" alt="Vakantie park Port Zélande">
-					</a>
-					<h3>Port Zélande</h3>
-					<div class="info">
-						<p>Nederland, Zuid-Holland</p>
-						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-					</div>
-				</article>
-
-				<article class="card">
-					<a href="#">
-						<img src="images/park3.jpg" alt="Vakantie park De Huttenheugte">
-					</a>
-					<h3>De Huttenheugte</h3>
-					<div class="info">
-						<p>Nederland, Drenthe</p>
-						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-					</div>
-				</article>
-
-				<article class="card">
-					<a href="#">
-						<img src="" alt="Vakantie park Park Zandvoort">
-					</a>
-					<h3>Park Zandvoort</h3>
-					<div class="info">
-						<p>Nederland, Noord-Holland</p>
-						<p>van di. 30 sept. tot do. 2 okt.(3 dagen - 2 nachten)</p>
-						<p>Vanaf <em>€164</em> <strong>€128</strong></p>
-					</div>
-				</article>
-			</div>
-		</section>
-
-		<section>
-			<h2>Aanbiedingen</h2>
 			<article>
-				<h3>Zomervakantie Last Minutes</h3>
-				<p>vanaf <em>€449</em> 4-pers. Comfort cottage 3 nachten/ 4 dagen</p>
-				<a href="#"><img src="" alt=""></a>
+				<h3>Woonboot</h3>
+				<h4>4</h4>
+				<p>Zo dicht bij het water kom je zelden. In de woonboot geniet je van een comfortabel interieur en een heerlijk privédek die natuurlijk uitkijkt over...</p>
+				<a href="#">Bekijk de accommodaties</a>
 			</article>
+
 			<article>
-				<h3>Onze zomertopper: De Eemhof!</h3>
-				<p>Avontuur in het bos, watersport voor iedereen en relaxen aan het Eemmeer</p>
-				<a href="#"><img src="" alt=""></a>
+				<h3>Avontuur cottage</h3>
+				<h4>4</h4>
+				<p>Voor de avonturiers onder ons! Waan jezelf in een exotisch eiland en ga mee op reis.</p>
+				<a href="#">Bekijk de accommodaties</a>
 			</article>
+
 			<article>
-				<h3>Vroegboekvoordeel</h3>
-				<p><em>20%</em>korting</p>
-				<ul>
-					<li>+ tot €45 <em>Activity Credit</em></li>
-					<li>+ gratis voorkeursligging</li>
-				</ul>
-				<a href="#"><img src="" alt=""></a>
+				<h3>Wellness cottage</h3>
+				<h4>4</h4>
+				<p>Volledig ontspannen kan vanuit de Wellnes Cottage. Elegant en luxueus ingericht met wellnessbadkamer en buiten een...</p>
+				<a href="#">Bekijk de accommodaties</a>
 			</article>
-			<a href="#">Bekijk alle aanbiedingen</a>
+
+			<article>
+				<h3>Premium Honden cottage</h3>
+				<h4>4</h4>
+				<p>De perfecte accommodatie voor jou en je trouwe viervoeter!</p>
+				<a href="#">Bekijk de accommodaties</a>
+			</article>
+			<a href="#">Bekijk alle accommodaties</a>
+			<a href="#">Vergelijk comfortniveaus</a>
 		</section>
 		<section>
-			<h2>Accommodaties omringd door natuur</h2>
-			<p>Is het niet fantastisch om bij elkaar te zijn en samen echt te genieten van onze mooie natuur? Bij ons kan dat op zijn best. Je hebt keuze uit verschillende luxeniveaus en alle accommodaties zijn compleet ingericht.</p>
-			<h3 class="active">Cottages</h3>
-			<a href="#" class="accommodatie-card">blb</a>
-			<h3>Bijzondere accommodaties</h3>
-			<a href="#" class="accommodatie-card">blb</a>
-			<h3>Hotelkamers / Appartementen</h3>
-			<a href="#" class="accommodatie-card">blb</a>
+			<h2>Niet te missen</h2>
+			<article>
+				<h3>Ontdek het kleurijke seizoen</h3>
+				<p>Laat de herfstkleuren je omarmen! Tijdens de leukste herfstactiviteiten is het tijd om samen op te laden, te ontdekken en te genieten van de kleine momenten die dit...</p>
+				<a href="#">Meer informatie</a>
+			</article>
+			<article>
+				<h3>Ontdek de nieuwe Premium Honden Cottage</h3>
+				<p>In De Kempervennen verblijf je nu in cottages die speciaal zijn ingericht voor een vakantie met je hond. Handig! Zo hoef je niet alles zelf vanuit huis mee te nemen.</p>
+				<a href="#">Meer informatie</a>
+			</article>
+			<article>
+				<h3>Adventure Foot Golf</h3>
+				<p>Beleef het 16-hole Adventure Foot Golf avontuur. Elke hole heeft zijn eigen unieke uitdaging met als hoogtepunt een hole met prachtig uitzicht.</p>
+				<a href="#">Meer informatie</a>
+			</article>
+			<article>
+				<h3>Outdoor Activity Center</h3>
+				<p>Geniet van het nieuwe Outdoor Acitivity Center! Klim, spring en balanceer over diverse elementen en ga de verschillende niveaus aan in de hoogte.</p>
+				<span>Nieuw</span>
+				<a href="#">Meer informatie</a>
+			</article>
 		</section>
-	</main>
+		<section>
+			<h2>Activiteiten voor alle leeftijden</h2>
+			<img src="" alt="Kinderen die zwemmen in het zwembad">
+			<p>Aqua Mundo</p>
+			<img src="" alt="Kinderen die klimmen op klimmuur">
+			<p>Outdoor Activity Center</p>
+			<img src="" alt="Wild waterbaan van Aqua Mundo">
+			<p>Aqua Racer & Aqua Loop</p>
+			<img src="" alt="Kinderen die geitjes voeren">
+			<p>Kinderactiviteiten</p>
+			<img src="" alt="Kinderen die boogschieten">
+			<p>Sport & Fun</p>
+			<a href="#">Bekijk alle activiteiten</a>
+		</section>
+		<section>
+			<h2>Restaurants & Shops</h2>
+			<p>Schuif aan in een van onze 5 restaurants onder de palmbomen: Italiaans, pannenkoeken, een rijk buffet, vurige grillgerechten of snelle snacks. Eet je in je cottage, ga dan langs de supermarkt, bestel een pizza of laat je een Table Cooking pakket bezorgen! Er is gedacht aan de allerkleinsten door kindvriendelijke gerechten, babyvoeding en veel plezier onder de palmbomen. Ook staan we steeds klaar om rekening te houden met jouw allergieën of voedselintoleranties.</p>
+			<img src="" alt="Mensen die eten in een restaurant">
+			<p>Restaurants</p>
+			<img src="" alt="Winkelen in een supermarkt">
+			<p>supermarkt</p>
+			<img src="" alt="Eten bestellen via een app">
+			<p>Cottage Delivery Service</p>
+			<a href="#">Bekijk alle restaurants & shops</a>
+		</section>
+		<section>
+			<h2>Te zien en te doen in de omgeving van het park</h2>
+			<p>Verken de bruisende stad Eindhoven, spot wilde dieren in Safaripark Beekse Bergen en ervaar de sprookjeswereld van de Efteling. Bezoek het gezellige Lommel, wandel door de Malpie en ontdek het leven van Vincent van Gogh in het Van Gogh Village Museum!</p>
+			<img src="" alt="Natuurgebied de Malpie">
+			<img src="" alt="Stad valkenswaard">
+			<img src="" alt="Afbeelding vogel van het Valkerijmuseum">
+			<img src="" alt="Cultuurhuis Bergeijk">
+			<img src="" alt="Kinderen die kanoën bij Rofra Kanovaren Valkenswaard">
+			<img src="" alt="Natuurgebied De Plateaux-Hageven">
+			<img src="" alt="Winkelende mensen in Eindhoven">
+			<img src="" alt="Prehistorisch Dorp Eindhoven">
+			<img src="" alt="Satalietfoto van Lommel">
+			<img src="" alt="Museum Motion Experience">
+			<img src="" alt="Het van Gogh Dorp Nuenen">
+			<img src="" alt="Landgoed Wellenseind">
+			<img src="" alt="Stads brug van Weert">
+			<img src="" alt="Slaapend neilpaard in Safaripark Beekse Bergen">
+			<img src="" alt="Kind luisterend naar verhaal van de sprookjesboom in de Efteling">
+			<a href="#">Bekijk alle bezienswaardigheden</a>
+		</section>
+    </main>
 	<footer>
 		<div class="footer-content">
 		  <h2>Blijf up-to-date! En ontvang €25 extra korting* op je volgende verblijf!</h2>

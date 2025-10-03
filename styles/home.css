@@ -21,81 +21,25 @@ main a{
 section:nth-of-type(1){
     grid-column: 1/-1;
 }
-/* 
+
+main button{
+    background-color: var(--primary-color-action);
+    color: var(--color-background);
+    border: none;
+    padding: .5em 1em;
+    cursor: pointer;
+    border-top-left-radius: 0;
+    border-top-right-radius: 10em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 10em;
+}
+
 section:nth-of-type(2){
-    display: flex;
-    flex-direction: column;
-}
-
-section:nth-of-type(2) a{
-    background-color: transparent;
-    color: var(--text-color);
-}
-
-article{
-    display:grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 1em;
-
-    margin: 1em;
-}
-
-article a{
-    position: absolute;
-
-    background-color: transparent;
-    border-radius: 0%;
-
-    grid-column: 1/3;
-    grid-row: 1/-1;
-
-    margin: 1em;
-}
-article a img{
-    height: 100%;
-    left: 0;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    transition: transform .5s;
-    border-radius: .625rem .625rem 0 0;
-}
-article h2, article h3, article p article ul, article li{
-    z-index: 2;
-}
-
-article h2{
-    font-size: 1em;
-
-    grid-row-start: 2;
-    grid-column: 1/-1;
-
-    align-self:end;
-}
-
-article h3{
-    font-size: .7em;
-
-    grid-row-start: 3;
-    grid-column-start: 1/-1;
-
-    align-self:start;
-}
-
-article p{
-    font-size: .7em;
-
-    grid-row-start: 4;
-    grid-column-start: 1/-1;
-
-    align-self:start;
-} */
-
-.bestemmingen {
     padding: 1em;
 }
 
-.tabs {
+section:nth-of-type(2) ul{
+    list-style: none;
     display: flex;
     gap: 1em;
     border-bottom: 2px solid #ddd;
@@ -103,7 +47,24 @@ article p{
     border-radius: .6em;
 }
 
-.tab {
+section:nth-of-type(2) ul li{
+    margin: 0;
+}
+
+section:nth-of-type(2) img{
+    border-radius: .625rem;
+    display: block;
+    width: 17.5em;
+    height: 17.5em;
+    object-fit: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: transform .5s;
+}
+
+section:nth-of-type(2) ul li a{
     background: none;
     border: none;
     padding: .5em 1em;
@@ -113,7 +74,7 @@ article p{
     border-radius: 0;
 }
 
-.tab.active {
+section:nth-of-type(2) ul li a.active {
     color: var(--primary-color);
     border-bottom: 3px solid var(--primary-color);
 }
@@ -130,7 +91,7 @@ article p{
     display: flex;
 }
 
-.card {
+section:nth-of-type(2) article{
     position: relative;
     min-width: 250px;
     height: 200px;
@@ -139,18 +100,18 @@ article p{
     color: var(--color-text-dark);
 }
 
-.card img {
+section:nth-of-type(2) article img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform .5s;
 }
 
-.card img:hover {
+section:nth-of-type(2) article img:hover {
     transform: scale(1.05);
 }
 
-.card .info {
+section:nth-of-type(2) article .info {
     position: absolute;
     bottom: 0;
     left: 0;
