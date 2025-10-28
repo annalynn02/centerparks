@@ -272,3 +272,20 @@ footer a{
 		}
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	body{
+		background-color:var(--color-background-dark);
+		color:var(--color-text-dark);
+	}
+
+	main{
+		background-color:var(--color-background-dark);
+		color:var(--color-text-dark);
+	}
+
+	footer{
+		background-color:var(--primary-color);
+		color:var(--primary-color-2-dark);
+	}
+}
