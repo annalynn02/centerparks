@@ -64,69 +64,87 @@
 			<h2>Het kleurrijke seizoen om te ontdekken</h2>
 			<form> <!-- Ik weet dat het een forum moet zijn maar kan ik niet beter een gecompliseerde li maken en dat met JS en CSS aanspreken? -->
 				<!-- https://www.youtube.com/watch?v=2O8pkybH6po Extra hulp voor forum types -->
-				<label for="park"> - Kies Park - </label>
-				<select id="park" required> 
-					<option value="Nederland">Nederland</option> <!-- Op de website hebben ze het per land verborgen hoe regel ik dat? -->
-					<option value="">Het Heijderbos</option>
-					<option value="">De Eemhof</option>
-					<option value="">Port Zélande</option>
-					<option value="">Park Zandvoort</option>
-					<option value="">De Huttenheugte</option>
-					<option value="">De Kempervennen</option>
-					<option value="">Limburgse Peel</option>
-					<option value="">Parc Sandur</option>
-					<option value="Belgie">Belgie</option>
-					<option value="">Terhills Resort</option>
-					<option value="">Les Ardennes</option>
-					<option value="">De vossemeren</option>
-					<option value="">Erperheiden</option>
-					<option value="">Park De Haan</option>
-					<option value="Duitsland">Duitsland</option>
-					<option value="">Bispinger Heide</option>
-					<option value="">Park Bostalsee</option>
-					<option value="">Park Hochsauerland</option>
-					<option value="">Park Eifel</option>
-					<option value="">Park Nordseeküste</option>
-					<option value="">Park Allgäu</option>
-					<option value="Frankrijk">Frankrijk</option>
-					<option value="">Les Landes de Gascogne</option>
-					<option value="">Le Lac d'Ailette</option>
-					<option value="">Les Trois Forêts</option>
-					<option value="">Villages Nature Paris</option>
-					<option value="">Les Bois-Francs</option>
-					<option value="">Les Hauts de Bruyères</option>
-					<option value="">Le Bois aux Daims</option>
-					<option value="Denemarken">Denemarken</option>
-					<option value="">Nordborg Resort</option>
-				</select>
-				<label for="accommodaties"> - Kies aantal accommodaties - </label>
-				<select id="accommodaties">
-					<option value="">1 accommodatie</option>
-					<option value="">2 accommodaties</option>
-					<option value="">3 accommodaties</option>
-					<option value="">4 accommodaties</option>
-				</select>
-				<label for="personen"> - Kies aantal personen -</label>
-				<select id="personen"> <!-- Op de website hebben ze dat je per personen typen een aantal kan kiezen hoe regel ik dat? -->
-					<option value="">Volwassenen</option>
-					<option value="">Kinderen</option>
-					<option value="">Huisdieren</option>
-				</select>
-				<label for="aankomst"> - Kies een aankomst datum - </label>
-				<input id="aankost" type="date">
+				<fieldset>
+					<legend>opties</legend>
 
-				<label for="vertrek"> - Kies een vertrek datum - </label>
-				<input id="vertrek" type="date">
+					<label for="park"> - Kies Park - </label>
+					<select id="park" required> 
+						<option value="Nederland">Nederland</option> <!-- Op de website hebben ze het per land verborgen hoe regel ik dat? -->
+						<option value="">Het Heijderbos</option>
+						<option value="">De Eemhof</option>
+						<option value="">Port Zélande</option>
+						<option value="">Park Zandvoort</option>
+						<option value="">De Huttenheugte</option>
+						<option value="">De Kempervennen</option>
+						<option value="">Limburgse Peel</option>
+						<option value="">Parc Sandur</option>
+						<option value="Belgie">Belgie</option>
+						<option value="">Terhills Resort</option>
+						<option value="">Les Ardennes</option>
+						<option value="">De vossemeren</option>
+						<option value="">Erperheiden</option>
+						<option value="">Park De Haan</option>
+						<option value="Duitsland">Duitsland</option>
+						<option value="">Bispinger Heide</option>
+						<option value="">Park Bostalsee</option>
+						<option value="">Park Hochsauerland</option>
+						<option value="">Park Eifel</option>
+						<option value="">Park Nordseeküste</option>
+						<option value="">Park Allgäu</option>
+						<option value="Frankrijk">Frankrijk</option>
+						<option value="">Les Landes de Gascogne</option>
+						<option value="">Le Lac d'Ailette</option>
+						<option value="">Les Trois Forêts</option>
+						<option value="">Villages Nature Paris</option>
+						<option value="">Les Bois-Francs</option>
+						<option value="">Les Hauts de Bruyères</option>
+						<option value="">Le Bois aux Daims</option>
+						<option value="Denemarken">Denemarken</option>
+						<option value="">Nordborg Resort</option>
+					</select>
+
+					<label for="accommodaties"> - Kies aantal accommodaties - </label>
+					<select id="accommodaties">
+						<option value="">1 accommodatie</option>
+						<option value="">2 accommodaties</option>
+						<option value="">3 accommodaties</option>
+						<option value="">4 accommodaties</option>
+					</select>
+
+					<label for="personen"> - Kies aantal personen -</label>
+					<select id="personen"> <!-- Op de website hebben ze dat je per personen typen een aantal kan kiezen hoe regel ik dat? -->
+						<option value="">2</option>
+						<option value="">3</option>
+						<option value="">4</option>
+						<option value="">5</option>
+						<option value="">6</option>
+						<option value="">7</option>
+						<option value="">8</option>
+						<option value="">9</option>
+					</select>
+				</fieldset>
+
+				<fieldset>
+					<legend>periode</legend>
+
+					<label for="aankomst"> - Kies een aankomst datum - </label>
+					<input id="aankost" type="date">
+
+					<label for="vertrek"> - Kies een vertrek datum - </label>
+					<input id="vertrek" type="date">
+
+				</fieldset>
+
 				<button type="submit">Zoek</button>
-				</form>
-				<img src="images/1920x530_1920x530HB156708_1.jpg" alt="Mensen die spelen in de herfstbladeren bij Center Parcs">
+			</form>
+			<img src="images/1920x530_1920x530HB156708_1.jpg" alt="Mensen die spelen in de herfstbladeren bij Center Parcs">
 		</section>
 
 		<section> <!-- Bestemmingen 2 -->
 			<h2>Onze bestemmingen</h2> 
 
 			<ul>
-				<li><a class="active" data-target="recent">Jouw laatst bekeken parken</a></li> <!-- Mag ik hier een class active bij voor de JS? -->
+				<li><a class="active" data-target="recent">Jouw laatst bekeken parken</a></li> <!-- Mag ik hier een class active bij voor de JS? en een data target? Hoe moet ik dit anders doen? -->
 				<li><a data-target="favoriet">Onze favoriete bestemmingen</a></li>
 				<li><a data-target="dichtbij">Vlakbij huidige locatie</a></li>
 			</ul>

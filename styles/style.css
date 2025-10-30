@@ -112,7 +112,7 @@ nav:nth-of-type(1) ul.is-open {
 }
 
 /* Hamburger menu button */
-button {
+header button {
   appearance: none;
 
   width: 5rem;           
@@ -128,7 +128,7 @@ button {
   z-index: 100;
 }
 
-button.open-menu {
+header button.open-menu {
   appearance: none;
 
   width: .8em;           
@@ -146,7 +146,7 @@ button.open-menu {
   z-index: 100;
 }
 
-button span {
+header button span {
   display: block;
 
   width: 3rem;  
@@ -161,24 +161,24 @@ button span {
   transition: 0.5s;
 }
 
-button span:nth-of-type(1) {
+header button span:nth-of-type(1) {
   translate: 0 -0.8rem; 
 }
 
-button span:nth-of-type(3) {
+header button span:nth-of-type(3) {
   translate: 0 0.8rem;
 }
 
-button.open-menu span:nth-of-type(1) {
+header button.open-menu span:nth-of-type(1) {
   translate: 0;
   rotate: 45deg;
 }
 
-button.open-menu span:nth-of-type(2) {
+header button.open-menu span:nth-of-type(2) {
   scale: 0 1;
 }
 
-button.open-menu span:nth-of-type(3) {
+header button.open-menu span:nth-of-type(3) {
   translate: 0;
   rotate: -45deg;
 }

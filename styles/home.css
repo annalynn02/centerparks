@@ -20,6 +20,7 @@ main a{
 
 section:nth-of-type(1){
     grid-column: 1/-1;
+    grid-row: 1/2;
 
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(16em, 1fr) );
@@ -28,26 +29,93 @@ section:nth-of-type(1){
 section:nth-of-type(1) img{
     width: 100%;
     height: auto;
-    border-radius: .625rem;
-    margin-top: 1em;
-    grid-column: 1/-1;
-    grid-row: 1/2;
+
+    display: block;
+
+    grid-row: 1/-1;
+
 }
 
-main button{
+section:nth-of-type(1) h2{
+    position: absolute;
+
+    grid-column: 1/-1;
+    grid-row: 1/2;
+
+    justify-self: center;
+    align-self: center;
+
+    color: var(--color-text-dark);
+
+    padding: 0.5em 1em;
+
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/*  ...Hier komt de forum stijling...  */
+
+section:nth-of-type(1) form {
+    /* display:grid; */
+    margin:1em;
+
+    border-radius:2rem;
+    box-shadow: 0 0 .5em #0006;
+
+    z-index: 3;
+
+    grid-row: 2/3;
+}
+
+section:nth-of-type(1) form fieldset {
+    border:none;
+    margin:0;
+    padding:1em;
+    display:grid
+}
+
+section:nth-of-type(1) form fieldset legend {
+    position: absolute;
+    left:-9999em;
+}
+
+
+section:nth-of-type(1) form button{
     background-color: var(--primary-color-action);
     color: var(--color-background);
     border: none;
-    padding: .5em 1em;
+    padding: 0 1em;
     cursor: pointer;
-    border-top-left-radius: 0;
-    border-top-right-radius: 10em;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 10em;
+    /* border-top-left-radius: 0; */
+    /* border-top-right-radius: 10em; */
+    /* border-bottom-left-radius: 0; */
+    /* border-bottom-right-radius: 10em; */
+
+    border-radius:0 0 2rem 2rem;
+
+    display:block;
+    width:100%;
+
+    font-size:1.5em;
+
+    height:4rem;
 }
+
+
+section:nth-of-type(1) form select {
+    appearance: none;
+    font:inherit;
+    padding:1em;
+}
+
+
+
+/* TWEEDE SECTION */
 
 section:nth-of-type(2){
     padding: 1em;
+
+    grid-row: 3/4;
 }
 
 /* tabs */

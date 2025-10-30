@@ -13,7 +13,9 @@ menuButton.addEventListener("click", () => { //Verkorte manier van een function 
 
 //if else stetment gebruiken
 
-//met behulp van ChatGPT, maar werkt nogsteeds niet... (Promt was ik heb dit in mijn HTML.... ik wil met JS doormiddel van array en if else statements een tab systeem maken waarbij je op de tab klikt en de juiste categorie tevoorschijn komt. De HTML structuur is als volgt...)
+//met behulp van ChatGPT, maar werkt nogsteeds niet... (Promt was ik heb dit in mijn HTML.... ik wil met JS doormiddel van array en if else statements een tab systeem maken waarbij je op de tab klikt en de juiste categorie tevoorschijn komt. De HTML structuur is als volgt...) 
+
+// Er zijn meerdere dingen waar ik niet blij mee ben bij deze nummer 1 hij werkt niet nummer 2 hij gebruikt class en dat wil ik liever niet maar ik weet gewoon niet hoe ik het anders moet doen...
 
 // Klik-event toevoegen aan elke tab
 tabs.forEach(tab => {
