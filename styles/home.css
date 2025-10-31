@@ -54,7 +54,6 @@ section:nth-of-type(1) h2{
 }
 
 /*  ...Hier komt de forum stijling...  */
-
 section:nth-of-type(1) form {
     /* display:grid; */
     margin:1em;
@@ -78,7 +77,6 @@ section:nth-of-type(1) form fieldset legend {
     position: absolute;
     left:-9999em;
 }
-
 
 section:nth-of-type(1) form button{
     background-color: var(--primary-color-action);
@@ -107,25 +105,101 @@ section:nth-of-type(1) form select {
 
 
 /* TWEEDE SECTION */
-
 section:nth-of-type(2){
     padding: 1em;
 
-    grid-row: 3/4;
+    grid-row: 4/5;
 }
 
-/* tabs */
+section:nth-of-type(2) nav a{
+    background: none;
+    border: none;
+    padding: .5em 1em;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color-text-dark);
+    text-decoration: none;
+    display: inline-block;
+}
+
+section:nth-of-type(2) nav a.is-visible{
+    text-decoration: underline;
+    cursor:default;
+    color: var(--primary-color);
+}
+
 section:nth-of-type(2) ul{
-    list-style: none;
-    display: flex;
-    gap: 1em;
-    border-bottom: 0.12em solid #ddd;
-    background-color: lightgrey;
-    border-radius: .6em;
-    padding: .5em;
-    margin: 0 0 1em 0;
+    display:none;
 }
 
+section:nth-of-type(2) ul.is-visible{
+    display:flex;
+}
+
+/* overschrijft andere code met deze text */
+@layer basis {
+    section:nth-of-type(2) nav{
+        padding:1em;
+
+        display:flex;
+        gap:1em;
+
+        background-color:silver;
+        border-radius:1em;
+    }
+
+    section:nth-of-type(2) ul{
+        width:100%;
+        flex-shrink:0;
+
+        margin:0;
+        padding:1em;
+
+        display:flex;
+        overflow-x:auto;
+        scroll-snap-type:x mandatory;
+        overscroll-behavior-x:contain;
+        gap:1em;
+
+        list-style-type: none;
+
+        background-color:#eee;
+            
+        scrollbar-width: thin;
+        scrollbar-color: var(--primary-color) transparent;
+    }
+
+    section:nth-of-type(2) li{
+        width:12em;
+        flex-shrink:0;
+            
+        scroll-snap-align:center;
+    }
+
+    section:nth-of-type(2) ul li{
+        margin: 0;
+    }
+
+    section:nth-of-type(2) ul li a{
+        background: none;
+        border: none;
+        padding: .5em 1em;
+        cursor: pointer;
+        font-weight: bold;
+        color: var(--color-text-dark);
+        text-decoration: none;
+        display: inline-block;
+    }
+
+
+    section:nth-of-type(2) img{
+        width:100%;
+
+        border-radius: 2rem;
+        display:block;
+    }
+}
+/* tabs
 section:nth-of-type(2) ul li{
     margin: 0;
 }
@@ -146,23 +220,23 @@ section:nth-of-type(2) ul li a.active {
     border-bottom: 0.25em solid var(--primary-color);
 }
 
-/* carousel (verborgen standaard) */
+/* carousel (verborgen standaard)
 .carousel {
-    display: none;             /* default: verborgen */
+    display: none;             /* default: verborgen 
     gap: 1em;
     padding: 1em 0;
     overflow-x: auto;
 }
 
-/* zichtbaar wanneer active */
+/* zichtbaar wanneer active 
 .carousel.active {
     display: flex;
-    flex-wrap: nowrap;         /* horizontaal scrollen */
+    flex-wrap: nowrap;         /* horizontaal scrollen 
 }
 
-/* kaarten layout */
+/* kaarten layout 
 .card{
-    min-width: 17.5rem;        /* vaste breedte per kaart */
+    min-width: 17.5rem;        /* vaste breedte per kaart 
     max-width: 17.5rem;
     background: #fff;
     border-radius: .5rem;
@@ -170,13 +244,13 @@ section:nth-of-type(2) ul li a.active {
     overflow: hidden;
     display: block;
     position: relative;
-    flex: 0 0 auto;            /* voorkom dat ze krimpen */
+    flex: 0 0 auto;            /* voorkom dat ze krimpen 
 }
 
 .card img{
     display: block;
     width: 100%;
-    height: 12rem;             /* vaste afbeeldinghoogte */
+    height: 12rem;             /* vaste afbeeldinghoogte 
     object-fit: cover;
 }
 
@@ -258,20 +332,9 @@ section:nth-of-type(2) article img {
     height: 100%;
     object-fit: cover;
     transition: transform .5s;
-}
+} */
 
-section:nth-of-type(2) article img:hover {
-    transform: scale(1.05);
-}
-
-section:nth-of-type(2) article .info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: .5em;
-    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent); 
-}
-
+/* DERDE SECTION */
 section:nth-of-type(3){
     display: grid;
     grid-template-columns: 1fr, 1fr;
