@@ -197,25 +197,189 @@ nav:nth-of-type(2) ul{
 nav:nth-of-type(2) ul li{
 	flex-direction: column;
 }
-/* Footer */
-footer{
-	background-color:var(--primary-color);
-	color:var(--primary-color-2);
-	padding: 1em;
-	margin-top: 2em;
+/* ===== FOOTER BASIS ===== */
+footer {
+    background: #0f4d3d;
+    color: #fff;
+    padding: 3rem 1.5rem;
+    font-family: inherit;
 }
 
-footer a{
-	color: var(--primary-color-2);
-	background-color: transparent;
-
+footer h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
+
+footer p {
+    text-align: center;
+    max-width: 40ch;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    height: 2rem;
+    width: auto;
+    object-fit: contain;
+}
+
+/* ===== FORM ===== */
+footer form {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+footer form input {
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    width: 14rem;
+}
+
+footer form button {
+    background: #d83a74;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ===== ACCORDION STYLING (alle ul's in footer) ===== */
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid rgba(255,255,255, .4);
+}
+
+footer ul li {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255,255,255, .4);
+}
+
+footer ul li a {
+    display: flex;
+    justify-content: space-between; /* tekst links, + rechts */
+    align-items: center;
+}
+
+/* Voeg + icoon toe via CSS */
+footer ul li a::after {
+    content: "+";
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ===== LANGUAGE SELECT ===== */
+footer select {
+    width: 100%;
+    padding: 1rem;
+    border-radius: .7rem;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+/* ===== SOCIAL ICONS ===== */
+footer ul:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+footer ul:nth-of-type(2) li img {
+    width: 2rem;
+}
+
+/* ===== PAYMENT ICONS ===== */
+footer img[alt=""] {
+    width: 3rem;
+    margin: 0 .5rem;
+}
+
+footer h2:nth-of-type(4),
+footer h2:nth-of-type(5) {
+    text-align: center;
+}
+
 
 @media screen {
 	@media (min-width: 600px) {
 		/* Styles */
 		nav:nth-of-type(1) ul li{
 			font-size: 1.375rem;
+		}
+	}
+
+	@media (min-width: 900px) {
+
+		footer {
+			padding-top: 5rem;
+		}
+
+		/* Verberg de plusjes op desktop */
+		footer ul li a::after {
+			content: "";
+		}
+
+		/* De eerste footer <ul> (menu met blog / vakantieparken / etc.) */
+		footer > ul:first-of-type {
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);  /* 6 tabs naast elkaar */
+			gap: 1rem;
+			border: none;
+			padding: 2rem 0;
+		}
+
+		footer > ul:first-of-type li {
+			border: none;
+			padding: 0;
+			text-align: center;
+		}
+
+		footer > ul:first-of-type li a {
+			background: rgba(255, 255, 255, .1);
+			padding: 1rem;
+			border-radius: .6rem;
+			display: block;
+			transition: .2s;
+		}
+
+		footer > ul:first-of-type li a:hover {
+			background: rgba(255, 255, 255, .2);
+		}
+
+
+		/* Social icons rij */
+		footer ul:nth-of-type(2) {
+			justify-content: flex-start;
+			gap: 2rem;
+		}
+
+		/* Taal-select en betalingsiconen mooi naast elkaar */
+		footer h2:nth-of-type(2),
+		footer select,
+		footer h2:nth-of-type(3),
+		footer ul:nth-of-type(2),
+		footer h2:nth-of-type(4),
+		footer img {
+			text-align: left;
 		}
 	}
 
