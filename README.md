@@ -287,11 +287,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken voor eindgesprek</summary>
-  <img src="readme-images/Screenshot 2025-11-05 at 11.38.12.png" width="375px" alt="Uitkomst pagina 1">
-  <img src="readme-images/Screenshot 2025-11-05 at 11.38.23.png" width="375px" alt="Uitkomst pagina 2">
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Screenshot 2025-11-05 at 11.38.12.png" width="375px" alt="Uitkomst pagina 1">
+  <img src="readme-images/Screenshot 2025-11-05 at 11.38.23.png" width="375px" alt="Uitkomst pagina 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
