@@ -229,6 +229,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - De volgorde van headings heb ik verbeterd sommige zaten niet goed of onlogisch
+  - Ik heb een dark mode toegevoegd aan mijn pagina de orginele heeft dit niet
+  - Sommige links zijn a, sommige zijn div dit heb ik aangepast zodat er geen div links meer zijn
+  - Sommige buttos zijn div, sommige zijn buttons. Ook dit aangepast geen div's meer
+  - Animatie, audio en video NVT heb ik niet op mijn pagina's
+  - Op AA niveau checkt alles Ja. Dat deed het orgineel ook al.
 
 </details>
 
