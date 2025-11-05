@@ -133,14 +133,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="reademe-images/Screenshot 2025-11-05 at 13.00.02" width="375px" alt="breakdown van de hele home pagina">
+  <img src="reademe-images/Screenshot 2025-11-05 at 13.00.02.png" width="375px" alt="breakdown van de hele home pagina">
   <img src="reademe-images/Screenshot 2025-11-05 at 13.00.16" width="375px" alt="breakdown van de hele home pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/Screenshot 2025-11-05 at 13.10.50" width="375px" alt="breakdown van een carousel">
+  <img src="readme-images/Screenshot 2025-11-05 at 13.10.50.png.png" width="375px" alt="breakdown van een carousel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/Screenshot 2025-11-05 at 13.18.22" width="375px" alt="breakdown van een reclame afbeelding stukje met grid">
+  <img src="readme-images/Screenshot 2025-11-05 at 13.18.22.png" width="375px" alt="breakdown van een reclame afbeelding stukje met grid">
 
 </details>
 
