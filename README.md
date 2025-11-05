@@ -134,10 +134,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### de hele pagina: 
   <img src="reademe-images/Screenshot 2025-11-05 at 13.00.02.png" width="375px" alt="breakdown van de hele home pagina">
-  <img src="reademe-images/Screenshot 2025-11-05 at 13.00.16" width="375px" alt="breakdown van de hele home pagina">
+  <img src="reademe-images/Screenshot 2025-11-05 at 13.00.16.png" width="375px" alt="breakdown van de hele home pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/Screenshot 2025-11-05 at 13.10.50.png.png" width="375px" alt="breakdown van een carousel">
+  <img src="readme-images/Screenshot 2025-11-05 at 13.10.50.png" width="375px" alt="breakdown van een carousel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/Screenshot 2025-11-05 at 13.18.22.png" width="375px" alt="breakdown van een reclame afbeelding stukje met grid">
