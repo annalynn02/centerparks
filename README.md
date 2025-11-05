@@ -287,6 +287,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken voor eindgesprek</summary>
+  <img src="readme-images/Screenshot 2025-11-05 at 11.38.12.png" width="375px" alt="Uitkomst pagina 1">
+  <img src="readme-images/Screenshot 2025-11-05 at 11.38.23.png" width="375px" alt="Uitkomst pagina 2">
 
   ### Je uitkomst - karakteristiek screenshots:
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
@@ -295,13 +297,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Dit ging goed/Heb ik geleerd: 
   Een carousel laten besturen met JS. Ben erg tevreden met het eindresultaat het is niet voledig het zelfde als de website maar hij werkt en daar ben ik heel blij mee.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/Screenshot 2025-11-05 at 11.32.15.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
  Het sticky maken van navigatie in de 1e sectie op mijn 2e pagina. Hij wilde het niet doen en ik weet niet waarom dus dat is helaas niet gelukt.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/Screenshot 2025-11-05 at 11.35.10.png" width="375px" alt="bummer">
 </details>
 
 
