@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Anna Tolhuis
 
   #### Je startniveau:
-  Blauw het kan altijd omhoog
+  Blauw
 
   #### Je focus:
   responsive, maar ik wil ook graag een dark mode toevoegen aan mijn website en kijken of ik bepaalde stukken kan verbeteren aan de website als ik daar tijd voor heb.
@@ -161,18 +161,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | Anna       |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | Im mijn carousel link ik door naar de volgende pagina per blokje. De link die is niet klikbaar, omdat alles er boven op ligt ook maak ik nu veel gebruik van div's en classes, maar hoe kan ik zorgen dat hij werkt en daar minder gebruik van maakt? Ook zit er een nav in maar mag dit wel buiten de header? |
-  | en dat ook nog | dit als er tijd is | nog een punt | Ook wordt hij aangesproken met JS, maar op het moment werkt dit niet hoe zorg ik er voor dat het wel werkt? |
-  | ...            | ...                | ...          | Mijn footer ziet er zo uit met ook uitklapbaar, mag ik dit net als de header simpeler maken of moet dit wel echt helemaal zo uit gewerkt zoals ik nu heb?         |
+  | dit bespreken  | en dit             | en ik dit    | Hoe kan je een forum stylen? |
+  | en dat ook nog | dit als er tijd is | nog een punt | Klopt de forum structuur? |
+  | ...            | ...                | ...          |  |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Je mag meer dan 1 nav in je header
+  - Je header hoeft niet zo extreem uitgebreid 
+  - Js in je forum zou ik niet doen is te gecompliseerd
+  - Section -> Forum -> Select -> option hoort een label voor de eerste optie
+			label las van selectie
+			select id en label for
+			label hoef je niet te zien a11i visually hidden voor verstoppen
+			elk onderdeel heeft een label nodig mag niet zomaar een li gebruiken maar hier heb je hem nodig om ze te koppelen!
+			voor calender input type "date" zelf opzoeken welke
+			select gebruiken voor simpele drop dropdown voor styling mag je imput type text gebruiken
+			CSS -> vragen als ik er aan toe ben.
 
 </details>
 
@@ -192,20 +199,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | student 1      | student 2          | student 3    | Anna       |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | dit bespreken  | en dit             | en ik dit    | Hoe kan ik deze Carousel met JS goed aanspreken ik heb nu dit, maar het werkt niet...  |
+  | en dat ook nog | dit als er tijd is | nog een punt |  |
+  | ...            | ...                | ...          |  |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Gebruik inspect tool om je eigen site te controleren.
+  - Gebruik inspect tool om te kijken naar hoe de andere website het heeft gedaan.
+  - If else gebruiken voor de courses laten rouleren nu haal je iets weg en doe je er iets bij bij alle 3 tegelijkertijd en dat werkt niet.
+  - Div en class aanpassen met nth:of-type() ect
+  - Live server toevoegen aan visual studio code, dan kan je je aanpassingen live zien.
 
 </details>
 
@@ -239,7 +247,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | student 1      | student 2          | student 3    | Anna       |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
@@ -249,10 +257,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - <video width=… muted>
+  - Source
+  - Stijling bijna zelfde als img
+  - Button op z-index want er zit een laagje over heen
+  - Pauzeren en spelen doormiddel met if els statements 
+  - .src Afbeelding buiten source veranderen bij if els statements
+  - .alt omschrijving tekst aanpassen van de img
+  - Css shape()
+  - Css clippy
+  - Div
+  - Mask img
+  - Mask size
+  - Mask repeat
+  - Boarder tedious gebruik makkelijker dan clipy of maak
+  - Section nth of type pakt ook vanaf 1 in je folter als je daar sections hebt
+  - Background image: linear gradient (45deg, kleur 50%, kleur 50%)
+  - Background size: 250% 250%
+  - Background position: right
+  - Met over dan position left
 
 </details>
 
@@ -270,13 +293,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Een carousel laten besturen met JS. Ben erg tevreden met het eindresultaat het is niet voledig het zelfde als de website maar hij werkt en daar ben ik heel blij mee.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+ Het sticky maken van navigatie in de 1e sectie op mijn 2e pagina. Hij wilde het niet doen en ik weet niet waarom dus dat is helaas niet gelukt.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -294,8 +317,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. (https://www.youtube.com/watch?v=2O8pkybH6po Extra hulp voor forum types)
+  2. Chat GPT
+  3. (https://codepen.io/shooft/pen/ZYQMVWy) Voor de courosel
 
 </details>
