@@ -15,8 +15,8 @@ main section:nth-of-type(1){
   display: grid;
   grid-template-columns: repeat( auto-fit, minmax(16em, 1fr) );
 
-  align-items: center;
   text-align: center;
+  align-items: center; 
 }
 
 main section:nth-of-type(1) img{
@@ -70,6 +70,8 @@ main section:nth-of-type(1) ul{
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 
   align-self: start;
+  justify-self: stretch;
+  width: 100%; 
 }
 
 main section:nth-of-type(1) ul li a{
