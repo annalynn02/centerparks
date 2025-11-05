@@ -249,9 +249,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | Anna       |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | dit bespreken  | en dit             | en ik dit    | Hoe kan ik deze vorm kirijgen in deze afbeelding  |
+  | en dat ook nog | dit als er tijd is | nog een punt |  |
+  | ...            | ...                | ...          |      |
 
 
   ### Verslag van meeting
@@ -320,5 +320,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   1. (https://www.youtube.com/watch?v=2O8pkybH6po Extra hulp voor forum types)
   2. Chat GPT
   3. (https://codepen.io/shooft/pen/ZYQMVWy) Voor de courosel
+  4. Clip-path gemaakt met https://bennettfeely.com/clippy/
+  5. grid regel grid-template-columns: repeat( auto-fit, minmax(16em, 1fr) );
 
 </details>
